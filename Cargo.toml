@@ -5,7 +5,7 @@ authors = ["Guillaume Pinot <texitoi@texitoi.eu>"]
 edition = "2018"
 
 [dependencies]
-stm32f1xx-hal = {git = "https://github.com/stm32-rs/stm32f1xx-hal", features = ["rt", "stm32f103" ]}
+stm32f1xx-hal = "0.2"
 cortex-m-rt = "0.6"
 cast = { version = "0.2", default-features = false }
 
