@@ -112,6 +112,29 @@ pub enum MsEvent {
     Wait,
 }
 
+pub static SUCCESS_SONG: Score = Score {
+    tempo: 120 / 4,
+    notes: &SUCCESS_SONG_NOTES,
+};
+
+static SUCCESS_SONG_NOTES: [(u16, u8, u8, u8); 4] = [
+    (C5, 1, 16, 90),
+    (E5, 1, 16, 90),
+    (G5, 1, 16, 90),
+    (C6, 1, 16, 90),
+];
+
+pub static FAILURE_SONG: Score = Score {
+    tempo: 120 / 4,
+    notes: &FAILURE_SONG_NOTES,
+};
+
+static FAILURE_SONG_NOTES: [(u16, u8, u8, u8); 3] = [
+    (F5, 1, 16, 90),
+    (E5, 1, 16, 90),
+    (CS5, 1, 8, 90),
+];
+
 pub static AU_FEU_LES_POMPIERS: Score = Score {
     tempo: 120 / 4,
     notes: &AU_FEU_LES_POMPIERS_NOTES,
